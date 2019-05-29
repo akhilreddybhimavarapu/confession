@@ -1,5 +1,5 @@
 /* 'Open Sans' font from Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 
 .login {
@@ -79,6 +79,174 @@
 .login input[type="submit"]:focus {
   border-color: #05a;
 }
+.has-error input[type="email"],
+.has-error input[type="password"] {
+    border-color: rgb(216, 12, 12);
+    color: rgb(230, 14, 14);
+} */
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- https://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+/* body {
+  background: #f4f4f4;
+  color: #5a5656;
+  font: 100%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+} */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 390px;
+  margin: 5% 35%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+a { text-decoration: none; }
+
+h1 { font-size: 1em; }
+
+h1, p {
+  margin-bottom:8px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.uppercase { text-transform: uppercase; }
+
+/* ---------- LOGIN ---------- */
+
+#login {
+  margin: 50px auto;
+  width: 300px;
+}
+
+form fieldset input[type="email"], input[type="password"] {
+  background: #e5e5e5;
+  border: none;
+  border-radius: 3px;
+  color: #5a5656;
+  font-family: inherit;
+  font-size: 14px;
+  height: 50px;
+  outline: none;
+  padding: 0px 10px;
+  width: 280px;
+  -webkit-appearance:none;
+}
+
+form fieldset input[type="submit"] {
+  background-color: #008dde;
+  border: none;
+  border-radius: 3px;
+  color: #f4f4f4;
+  cursor: pointer;
+  font-family: inherit;
+  height: 45px;
+  text-transform: uppercase;
+  width: 300px;
+  -webkit-appearance:none;
+}
+
+form fieldset {
+  text-align: right;
+}
+
+form fieldset a {
+  color: #5a5656;
+  font-size: 12px;
+}
+
+form fieldset a:hover { text-decoration: underline; }
+
+.btn-round {
+  background: #5a5656;
+  border-radius: 50%;
+  color: #f4f4f4;
+  display: block;
+  font-size: 11px;
+  height: 48px;
+  line-height: 50px;
+  margin: 12px 125px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50px;
+}
+
+.facebook-before {
+  background: #0064ab;
+  border-radius: 3px 0px 0px 3px;
+  color: #f4f4f4;
+  display: block;
+  float: left;
+  height: 45px;
+  line-height: 50px;
+  text-align: center;
+  width: 45px;
+  margin: 3px 0;
+}
+
+.facebook {
+  background: #0079ce;
+  border: none;
+  border-radius: 0px 3px 3px 0px;
+  color: #f4f4f4;
+  cursor: pointer;
+  height: 45px;
+  text-transform: uppercase;
+  width: 255px;
+  margin: 3px 0;
+}
+
+.twitter-before {
+  background: #189bcb;
+  border-radius: 3px 0px 0px 3px;
+  color: #f4f4f4;
+  display: block;
+  float: left;
+  height: 45px;
+  line-height: 50px;
+  text-align: center;
+  width: 45px;
+  margin: 3px 0;
+}
+
+
+.twitter {
+  background: #1bb2e9;
+  border: none;
+  border-radius: 0px 3px 3px 0px;
+  color: #f4f4f4;
+  cursor: pointer;
+  height: 45px;
+  text-transform: uppercase;
+  width: 255px;
+  margin: 3px 0;
+}
+
 .has-error input[type="email"],
 .has-error input[type="password"] {
     border-color: rgb(216, 12, 12);

@@ -1,6 +1,6 @@
-<h1 style="text-align:center">
-  Angular Login Example
-</h1>
+<!-- <div>
+  <h1>Confession</h1>
+</div>
 <div class="login">
   <h2 class="login-header">Log in</h2>
   <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
@@ -25,4 +25,56 @@
       <input type="submit" value="Log in">
     </p>
   </form>
+</div> -->
+
+
+<div class="card">
+  <div id="login">
+
+  <h1><strong>Welcome</strong> Confessor.</h1>
+
+  <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+
+    <fieldset>
+
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+        <input type="email" required placeholder="Email" formControlName="email">
+      </p>
+
+      <div *ngIf="isSubmitted && formControls.email.errors" class="help-block">
+        <div *ngIf="formControls.email.errors.required">Email is required</div>
+      </div>
+
+      <!-- <p><input type="email" required value="Username" onBlur="if(this.value=='')this.value='Username'" onFocus="if(this.value=='Username')this.value='' "></p> --> <!-- JS because of IE support; better: placeholder="Username" -->
+
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+        <input type="password" required placeholder="Password" formControlName="password">
+      </p>
+
+      <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+        <div *ngIf="formControls.password.errors.required">Password is required</div>
+      </div>
+
+      <!-- <p><input type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "></p> --> <!-- JS because of IE support; better: placeholder="Password" -->
+
+      <p><a href="#">Forgot Password?</a></p>
+
+      <p><input type="submit" value="Login"></p>
+
+    </fieldset>
+
+  </form>
+
+  <p><span class="btn-round">or</span></p>
+
+  <div>
+    <ul>
+      <li><a class="facebook-before"><span class="fontawesome-facebook"></span></a>
+      <button class="facebook">Login Using Facbook</button></li>
+      <li><a class="twitter-before"><span class="fontawesome-twitter"></span></a>
+      <button class="twitter">Login Using Twitter</button></li>
+    </ul>
+  </div>
+
+  </div> <!-- end login -->
 </div>
